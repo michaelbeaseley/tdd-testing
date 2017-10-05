@@ -8,7 +8,15 @@ function isPalindrome(str) {
         return false;
     }
 
+    if (str.length == 1){
+        return true;
+    }
     
+    const letters = str.split();
+    const reverseLetters = letters.reverse();
+    if(letters == reverseLetters){
+        return true;
+    }
 }
 
 module.exports = isPalindrome;
