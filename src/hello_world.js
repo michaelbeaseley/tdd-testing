@@ -1,5 +1,4 @@
 const sayHello = function(){
-    console.log('Running');
     return 'Hello World!';
 }
 
