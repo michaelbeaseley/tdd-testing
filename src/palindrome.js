@@ -4,6 +4,7 @@ function isPalindrome(str) {
         return false;
     }
 
+    str = str.trim();
     if(!str.length){
         return false;
     }

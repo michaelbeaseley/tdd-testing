@@ -27,3 +27,11 @@ test('should return false if eyes entered', () => {
 test('should return true if abc[]cba entered', () => {
     expect(isPalindrome('abc[]cba')).toBe(true);
 });
+
+test('should return false if string is only spaces', () => {
+    expect(isPalindrome('   ')).toBe(false);
+});
+
+test('should return true if palindrome entered with spaces around it', () => {
+    expect(isPalindrome('   eye  ')).toBe(true);
+});
