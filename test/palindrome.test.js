@@ -19,3 +19,11 @@ test('should return true if a character', () => {
 test('should return true if eye is entered', () => {
     expect(isPalindrome('eye')).toBe(true);
 });
+
+test('should return false if eyes entered', () => {
+    expect(isPalindrome()).toBe(false);
+});
+
+test('should return true if abc[]cba entered', () => {
+    expect(isPalindrome('abc[]cba')).toBe(true);
+});
