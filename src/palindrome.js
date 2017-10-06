@@ -4,18 +4,20 @@ function isPalindrome(str) {
         return false;
     }
 
-    str = str.trim();
+    
     if(!str.length){
         return false;
     }
 
-    if (str.length == 1){
+    if (str.length === 1){
         return true;
     }
     
-    const letters = str.split();
-    const reverseLetters = letters.reverse();
-    if(letters == reverseLetters){
+    let letters = str.split();
+    const reverseLetters = letters.reverse().join();
+    letters = letters.join();
+
+    if(letters === reverseLetters){
         return true;
     }
 }

@@ -28,10 +28,14 @@ test('should return true if abc[]cba entered', () => {
     expect(isPalindrome('abc[]cba')).toBe(true);
 });
 
-test('should return false if string is only spaces', () => {
-    expect(isPalindrome('   ')).toBe(false);
+test('should return true if string is only spaces', () => {
+    expect(isPalindrome('   ')).toBe(true);
 });
 
 test('should return true if palindrome entered with spaces around it', () => {
-    expect(isPalindrome('   eye  ')).toBe(true);
+    expect(isPalindrome('   eye ')).toBe(false);
+});
+
+test('should return true if race car entered', () => {
+    expect(isPalindrome('race car')).toBe(false);
 });
